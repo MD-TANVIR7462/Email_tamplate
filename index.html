@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message from DEMO</title>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif !important;
+        background-color: #f0f4f8 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+
+      /* Styling for the container */
+      .container {
+        width: 100% !important;
+        max-width: 600px !important;
+        margin: 20px auto !important;
+        background-color: #ffffff !important;
+        border-radius: 10px !important;
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1) !important;
+        overflow: hidden !important;
+      }
+
+      /* Header styling */
+      .header {
+        background: linear-gradient(90deg, #f5f5f5, #f5f5f5) !important;
+        padding: 15px !important;
+        text-align: center !important;
+      }
+
+      .header img {
+        width: 100% !important;
+        max-width: 400px !important;
+        height: auto !important;
+        display: block !important;
+        margin: 0 auto !important;
+        border-radius: 8px !important;
+      }
+
+      /* Body content styling */
+      .body-content {
+        padding: 25px !important;
+        color: #333333 !important;
+      }
+
+      .body-content h2 {
+        font-size: 24px !important;
+        color: #0073e6 !important;
+        margin-bottom: 10px !important;
+      }
+
+      .offer-box {
+        background-color: #f9f9f9 !important;
+        border-left: 6px solid #0073e6 !important;
+        padding: 20px !important;
+        border-radius: 8px !important;
+        margin: 20px 0 !important;
+        color: #555555 !important;
+      }
+
+      .offer-box strong {
+        font-size: 18px !important;
+        color: #333333 !important;
+      }
+
+      /* Call to action buttons */
+      .button-container {
+        text-align: center !important;
+        margin-top: 30px !important;
+      }
+
+      .button {
+        background-color: #0073e6 !important;
+        color: white !important;
+        padding: 12px 24px !important;
+        text-align: center !important;
+        text-decoration: none !important;
+        font-size: 16px !important;
+        border-radius: 50px !important;
+        margin: 10px 5px !important;
+        display: inline-block !important;
+        transition: background-color 0.3s ease !important;
+      }
+
+      .unsubscribe {
+        background-color: #ff4d4d !important;
+      }
+
+      /* Footer styling */
+      .footer {
+        background-color: #f5f5f5 !important;
+        color: #333 !important;
+        padding: 40px 20px !important;
+        text-align: center !important;
+        font-family: "Arial", sans-serif !important;
+        border-radius: 0 0 10px 10px !important;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+      }
+
+      .footer h3 {
+        margin-bottom: 20px !important;
+        font-size: 22px !important;
+        color: #2c3e50 !important;
+        letter-spacing: 1px !important;
+      }
+
+      .footer p {
+        margin: 10px 0 !important;
+        font-size: 16px !important;
+        color: #666 !important;
+      }
+
+      .footer a {
+        color: #0073e6 !important;
+        text-decoration: none !important;
+        transition: color 0.3s ease !important;
+      }
+
+      .social-icons {
+        margin-top: 20px !important;
+      }
+
+      .social-icons a {
+        display: inline-block !important;
+        margin: 0 15px !important;
+        transition: transform 0.3s ease !important;
+      }
+
+      .social-icons svg {
+        height: 25px !important;
+        fill: #2c3e50 !important;
+        transition: fill 0.3s ease !important;
+      }
+
+      .rights-reserved {
+        margin-top: 20px !important;
+        font-size: 14px !important;
+        text-align: center !important;
+        color: #888 !important;
+        font-weight: 400 !important;
+        position: relative !important;
+      }
+
+      .rights-reserved::before {
+        content: "" !important;
+        display: block !important;
+        width: 100% !important;
+        height: 1px !important;
+        background-color: #ccc !important;
+        margin: 10px 0 !important;
+      }
+
+      /* Responsive styling */
+      @media (max-width: 768px) {
+        .footer {
+          padding: 30px 15px !important;
+        }
+
+        .footer h3 {
+          font-size: 20px !important;
+        }
+
+        .footer p {
+          font-size: 14px !important;
+        }
+
+        .social-icons a {
+          margin: 0 10px !important;
+        }
+
+        .social-icons svg {
+          height: 22px !important;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .footer {
+          padding: 20px 10px !important;
+        }
+
+        .footer h3 {
+          font-size: 18px !important;
+        }
+
+        .footer p {
+          font-size: 12px !important;
+        }
+
+        .social-icons svg {
+          height: 20px !important;
+        }
+      }
+
+      /* Responsive design */
+      @media only screen and (max-width: 600px) {
+        .container {
+          width: 100% !important;
+        }
+
+        .header img {
+          max-width: 80% !important;
+        }
+
+        .button {
+          width: 80% !important;
+          margin: 10px 0 !important;
+        }
+
+        .body-content h2 {
+          font-size: 24px !important;
+          color: #0073e6 !important;
+          margin-bottom: 10px !important;
+        }
+
+        .body-content {
+          padding: 10px !important;
+        }
+
+        .offer-box {
+          background-color: #f9f9f9 !important;
+          border-left: 6px solid #0073e6 !important;
+          padding: 5px !important;
+          border-radius: 8px !important;
+          margin: 20px 0 !important;
+          color: #555555 !important;
+        }
+
+        .offer-box strong {
+          font-size: 18px !important;
+          color: #333333 !important;
+        }
+      }
+
+      @media only screen and (min-width: 768px) {
+        .header img {
+          max-width: 300px !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <table class="container" align="center">
+      <!-- Header -->
+      <tr>
+        <td class="header">
+          <img src="https://i.ibb.co/x5xykcS/Mary-2-1.jpg" alt="book Image" />
+        </td>
+      </tr>
+
+      <!-- Body content -->
+      <tr>
+        <td class="body-content">
+          <h2>We're thrilled to announce!</h2>
+          <div class="offer-box">
+            <strong>
+              <a
+                href="http://homedecoretail.siscotech.com/"
+                style="color: #0073e6; text-decoration: none"
+                >Buddha Gautam Mystic Painting</a
+              >
+              is now a best seller!
+            </strong>
+            <p>
+              This captivating piece of art has resonated with our customers,
+              bringing peace and inspiration into their homes. Now is the
+              perfect time to experience its transformative beauty for yourself!
+            </p>
+          </div>
+          <p>
+            <strong>Limited Time Offer:</strong> Enjoy an exclusive
+            <strong>18% off</strong> your purchase! 
+            <!-- Use code
+            <strong>BLISS18</strong> at checkout. -->
+          </p>
+          <p>
+            Join the many who have already made this piece a cherished part of
+            their lives. Click
+            <a
+              href="http://homedecoretail.siscotech.com/"
+              style="color: #0073e6; text-decoration: none"
+              >here</a
+            >
+            to shop now and bring home your own slice of serenity!
+          </p>
+
+          <!-- Buttons -->
+          <div class="button-container">
+            <a href="http://homedecoretail.siscotech.com/" class="button"
+              >Visit Us</a
+            >
+            <a
+              href="https://emailmarket.siscotech.com/views/unsubscribe/?email={{EMAIL}}&id={{ID}}"
+              class="button unsubscribe"
+              >Unsubscribe</a
+            >
+          </div>
+        </td>
+      </tr>
+
+      <!-- Footer -->
+
+      <tr>
+        <td class="footer">
+          <h3>Get In Touch</h3>
+          <p>
+            For Sales:
+            <a href="mailto:sales@homedecorretail.com"
+              >sales@homedecorretail.com</a
+            ><br />
+            For Inquiry:
+            <a href="mailto:support@homedecorretail.com"
+              >support@homedecorretail.com</a
+            >
+          </p>
+
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path
+                  d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                />
+              </svg>
+            </a>
+          </div>
+          <p class="rights-reserved">
+            All rights reserved by
+            <a
+              href="https://siscotek.com/"
+              style="color: #0073e6; text-decoration: none"
+              >Siscotek</a
+            >.
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
